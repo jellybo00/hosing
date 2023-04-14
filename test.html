@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<style>
+.grid { width:80% }
+.grid-sizer, .grid-item { width: 23%; }
+/* .grid-sizer, .grid-item { width: 200px; } */
+.grid-item {border:1px solid #8f99f3; margin-bottom:15px; border-radius: 20px; overflow:hidden;}
+.grid-item img {display: block; min-width:100%; max-width: 100%; }
+</style>
+</head>
+<body>
+<div class="grid">
+  <div class="grid-sizer"></div>
+  <div class="grid-item"><img src="../img/gallery/gallery_01.jpg" /></div>
+  <div class="grid-item"><img src="../img/gallery/gallery_02.jpg" /></div>
+  <div class="grid-item"><img src="../img/gallery/gallery_03.jpg" /></div>
+  <div class="grid-item"><img src="../img/gallery/gallery_04.jpg" /></div>
+  <div class="grid-item"><img src="../img/gallery/gallery_05.jpg" /></div>
+  <div class="grid-item"><img src="../img/gallery/gallery_06.jpg" /></div>
+  <div class="grid-item"><img src="../img/gallery/gallery_07.jpg" /></div>
+  <div class="grid-item"><img src="../img/gallery/gallery_08.jpg" /></div>
+  <div class="grid-item"><img src="../img/gallery/gallery_09.jpg" /></div>
+  <div class="grid-item"><img src="../img/gallery/gallery_10.jpg" /></div>
+  <div class="grid-item"><img src="../img/gallery/gallery_11.jpg" /></div>
+  <div class="grid-item"><img src="../img/gallery/gallery_12.jpg" /></div>
+</div>
+<script>
+var msnry = new Masonry( '.grid', {
+  itemSelector: '.grid-item',
+  // columnWidth: 200
+  columnWidth: '.grid-sizer',
+  percentPosition: true,
+  gutter : 20,
+});
+imagesLoaded( '.grid' ).on( 'progress', function() {
+  msnry.layout();
+});
+</script>
+</body>
+</html>

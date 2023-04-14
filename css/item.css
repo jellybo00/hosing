@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+.item_list_wrap {
+    padding-top: 50px;
+}
+.item_list .cover_img {
+    padding-top: 100% ;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.item_list .cover_img img {
+   border-radius: 10px;
+   -webkit-transition: all .5s;
+   -moz-transition: all .5s;
+   -o-transition: all .5s;
+   transition: all .5s;
+}
+.item_list .cover_img  img {
+
+}
+.item_list .cover_img:hover img {
+    transform:translate(-50%, -50%) scale(1.08);
+}
+
+
+.item_list .it_info {
+    margin-top:16px ;
+}
+.item_list .it_info p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height:1.3 ;
+}
+.item_list .it_info .id_desc {
+    font-size: 16px;
+    color: #999999;
+    display: block;
+    margin-bottom:6px ;
+}
+.item_list .it_info .wish_btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    margin-top: 10px;
+}
+.item_list .it_info .wish_btn i {
+    display: block;
+    width: 16px; height: 14px;
+    background: no-repeat center / cover;
+    background-image: url(../img/btn/wish_btn.png);
+    margin-right: 5px;
+}
+.item_list .it_info .wish_btn.on i {
+    background-image: url(../img/btn/wish_btn_on.png);
+}
+.item_list .it_info .wish_btn span {
+    font-size: 14px;
+    font-family: 'Lato';
+    font-weight: 700;
+    color: #cfcfcf;
+}
+.item_list .it_info .wish_btn.on span {
+    color: #f33f3f;
+}
+
+.gallery .item_list .cover_img {
+    padding-top: 68.5%;
+}
+
+
+
+
+@media screen and (max-width: 850px)  {
+
+    
+
+    .item_list .cover_img img {
+        border-radius: 0.625rem;
+    }
+
+    .item_list .it_info {
+        margin-top: 1rem;
+    }
+    .item_list .it_info .id_desc {
+        font-size: 1rem;
+        margin-bottom: 0.625rem;
+    }
+    .item_list .it_info p {
+        font-size: 1.25rem;
+        word-break: keep-all;
+    }
+    .item_list .it_info .wish_btn {
+        margin-top: 0.625rem;
+    }
+    .item_list .it_info .wish_btn i {
+        width:1.15625rem;
+        height: 1rem;
+        background-image: url(../img/btn/wish_btn_m.png);
+        margin-right: 0.3125rem;
+    }
+    .item_list .it_info .wish_btn.on i {
+        background-image: url(../img/btn/wish_btn_on_m.png);
+    }
+    .item_list .it_info .wish_btn span {
+        font-size: 0.875rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}

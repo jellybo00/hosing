@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+/* 노토산스 */
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-weight: 350;
+    src: url('../font/notokr-demilight.eot'); 
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-weight: 400;
+  src: url('../font/NotoSansKR-Regular.otf') format("opentype"); 
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-weight: 500;
+  src: url('../font/NotoSansKR-Medium.otf') format("opentype"); 
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-weight: 700;
+  src: url('../font/NotoSansKR-Bold.otf') format("opentype"); 
+}
+
+
+/* 에스코어드림 */
+@font-face {
+  font-family: 's-core-dream';
+  src: url("../font/sscdream1.woff2") format("woff2"), 
+      url("../font/sscdream1.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 's-core-dream';
+  src: url("../font/scdream2.woff2") format("woff2"), 
+      url("../font/scdream2.woff") format("woff");
+  font-weight: 200;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 's-core-dream';
+  src: url("../font/scdream3.woff2") format("woff2"), 
+      url("../font/scdream3.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 's-core-dream';
+  src: url("../font/scdream4.woff2") format("woff2"), 
+      url("../font/scdream4.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 's-core-dream';
+  src: url("../font/scdream5.woff2") format("woff2"), 
+      url("../font/scdream5.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 's-core-dream';
+  src: url("../font/scdream6.woff2") format("woff2"), 
+      url("../font/scdream6.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 's-core-dream';
+  src: url("../font/scdream7.woff2") format("woff2"), 
+      url("../font/scdream7.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 's-core-dream';
+  src: url("../font/scdream8.woff2") format("woff2"),
+      url("../font/scdream8.woff") format("woff");
+  font-weight: 800;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 's-core-dream';
+  src: url("../font/scdream9.woff2") format("woff2"), 
+      url("../font/scdream9.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; 
+}
+
+
+/* 라토 */
+@font-face {
+  font-family: 'Lato';
+  font-weight: 300;
+  src: url(./fonts/Lato-Light.eot);
+  src: local('Lato-Light'),
+      url(./fonts/Lato-Light.eot?#iefix) format('embedded-opentype'),
+      url(./fonts/Lato-Light.woff) format('woff'),
+      url(./fonts/Lato-Light.woff2) format('woff2'),
+      url(./fonts/Lato-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  src: url(./fonts/Lato-Regular.eot);
+  src: local('Lato-Regular'),
+      url(./fonts/Lato-Regular.eot?#iefix) format('embedded-opentype'),
+      url(./fonts/Lato-Regular.woff) format('woff'),
+      url(./fonts/Lato-Regular.woff2) format('woff2'),
+      url(./fonts/Lato-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  src: url(./fonts/Lato-Bold.eot);
+  src: local('Lato-Bold'),
+      url(./fonts/Lato-Bold.eot?#iefix) format('embedded-opentype'),
+      url(./fonts/Lato-Bold.woff) format('woff'),
+      url(./fonts/Lato-Bold.woff2) format('woff2'),
+      url(./fonts/Lato-Bold.ttf) format('truetype');
+}
+
+/* 나눔스퀘어 */
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 300;
+  src: url(./fonts/NanumSquareL.woff) format('woff');
+  
+}
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 400;
+  src: url(./fonts/NanumSquareR.woff) format('woff');
+  
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 700;
+  src: url(./fonts/NanumSquareB.woff) format('woff');
+  
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 800;
+  src: url(./fonts/NanumSquareEB.woff) format('woff');
+  
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url("../font/Pretendard-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal; }
+  
+  @font-face {
+    font-family: 'Pretendard';
+    src: url("../font/Pretendard-ExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal; }
+  
+  @font-face {
+    font-family: 'Pretendard';
+    src: url("../font/Pretendard-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal; }
+  
+  @font-face {
+    font-family: 'Pretendard';
+    src: url("../font/Pretendard-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal; }
+  
+  @font-face {
+    font-family: 'Pretendard';
+    src: url("../font/Pretendard-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal; }
+  
+  @font-face {
+    font-family: 'Pretendard';
+    src: url("../font/Pretendard-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal; }
+  
+  @font-face {
+    font-family: 'Pretendard';
+    src: url("../font/Pretendard-ExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal; }
+  
+  @font-face {
+    font-family: 'Pretendard';
+    src: url("../font/Pretendard-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal; }
+  
