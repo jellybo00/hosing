@@ -356,6 +356,77 @@ figure.cover_img img {
 
 
 
+/* ------------------------------------ pager */
+
+.pager {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+.pager li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px; height: 38px;
+    background: no-repeat center;
+}
+.pager li a span {
+    color: #999999;
+    position: relative;
+}
+.pager li.num + .num  {
+    margin-left: 6px;
+}
+.pager li.num:hover span,
+.pager li.on span{
+    color: #40b249;
+}
+.pager li.num:hover span::after,
+.pager li.on span::after{
+    content: '';
+    display: block;
+    width: calc(100% + 4px) ;height: 1px;
+    background:#40b249 ;
+    position: absolute;
+    bottom: -7px; left: 50%;
+    transform: translateX(-50%);
+}
+.pager li.btn a {
+    border-radius: 50%;
+    border: 2px solid #c0c0c0 ;
+}
+.pager li.all_prev a {
+    background-image: url(../img/common/all_prev.png);
+    margin-right:10px ;
+}
+.pager li.prev a {
+    background-image: url(../img/common/prev.png);
+    margin-right:16px ;
+}
+.pager li.all_next a {
+    background-image: url(../img/common/all_prev.png);
+    transform: rotate(180deg);
+    margin-left:10px ;
+}
+.pager li.next a {
+    background-image: url(../img/common/prev.png);
+    transform: rotate(180deg);
+    margin-left:16px ;
+}
+.pager li.next a:hover,
+.pager li.prev a:hover {
+    background-image: url(../img/common/prev_on.png);
+    border-color: #40b249 ;
+}
+.pager li.all_next a:hover,
+.pager li.all_prev a:hover {
+    background-image: url(../img/common/all_prev_on.png);
+    border-color: #40b249 ;
+}
+
+
+
 
 @media screen and (max-width: 850px)  {
 

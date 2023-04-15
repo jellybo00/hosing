@@ -41,7 +41,7 @@
     display: flex;
     align-items: center;
     border: none;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .item_list .it_info .wish_btn i {
     display: block;
@@ -66,6 +66,67 @@
 .gallery .item_list .cover_img {
     padding-top: 68.5%;
 }
+
+
+.item_list .amount {
+    margin-top: 20px;
+} 
+.item_list .amount * {
+    line-height: 1;
+    font-family: 'Pretendard';
+}
+.item_list .amount .discount {
+    font-size: 20px;
+    color: #ff0038;
+    margin-right:8px ;
+}
+.item_list .amount .discount strong {
+    font-weight: 700;
+    font-size: 24px;
+}
+.item_list .amount .sale {
+    font-size: 20px;
+    font-weight: 500;
+}
+.item_list .amount .sale strong {
+    font-weight: 700;
+    font-size: 24px;
+}
+.item_list .amount .cost  {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 8px;
+    color:#999999 ;
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
