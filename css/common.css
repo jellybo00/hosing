@@ -25,7 +25,12 @@ html.hidden {
     width: -moz-calc(100% - 2rem);
     width: calc(100% - 2rem);
 }
-
+.inner_450 {
+    max-width: 450px;
+}
+.inner_600 {
+    max-width: 600px;
+}
 .inner_1370 {
     max-width: 1370px;
 }

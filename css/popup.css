@@ -513,9 +513,51 @@
 
 
 
+/* ------------------------- 이용약관 팝업 */
+.agreePop .pop_mid {
+    background: #fff;
+    padding:20px 30px 50px ;
+    border-radius: 0 0 30px 30px;
+}
+.agreePop .agree_ttl {
+    margin-bottom:34px ;
+}
+.agreePop .agree_ttl h3 {
+    font-size: 30px;
+    text-align: center;
 
+}
+.agreePop .agree_area {
+    max-height:550px;
+    height: 100%;
+    overflow: auto;
+    padding-right: 10px;
+}
+.agreePop .agree_area::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background: #f2f2f2
+}
 
+.agreePop .agree_area::-webkit-scrollbar-thumb {
+    background: #40b249;
+    border-radius: 50px;
+}
+.agreePop .agree_area > div + div {
+    margin-top: 30px;
+}
+.agreePop .agree_area > div strong {
+    font-size: 18px;
+    display: block;
+    line-height: 1.66;
+}
 
+.agreePop .agree_area > div p {
+    font-size: 18px;
+    line-height: 1.66;
+    color:#454545 ;
+}
 
 
 

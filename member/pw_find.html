@@ -50,7 +50,7 @@
         </div>
     
         <!-- 헤더 내용 -->
-        <div class="bot flex_b_c">
+        <div class="inner flex_b_c">
             <div class="left flex__c">
                 <h1 class="logo">
                     <a href="/"></a>
@@ -124,7 +124,110 @@
         </div>
     </header>
 
-    <div id="container" class="main">
+    <div id="container" class="member sub">
+        <div class="inner_450">
+            <div class="member_ttl_box">
+                <h3 class="join_ttl">비밀번호 찾기</h3>
+                <p class="desc">비밀번호를 찾기위해 해당정보를 입력해주세요</p>
+            </div>
+
+            <div class="find_wrap form_data_wrap">
+                <div class="find_tab">
+                    <button type="button" class="find_tel on">휴대전화로 찾기</button>
+                    <button type="button" class="find_mail">이메일로 찾기</button>
+                </div>
+                
+
+                <div class="find_tab_cont">
+                    <!-- 휴대전화로 -->
+                    <div class="find_tab_box on">
+                        <div class="form_data">
+                            <span class="label">아이디<i>*</i></span>
+                            <input name="name" type="text" placeholder="아이디를 입력해주세요">
+                        </div>
+                        <div class="form_data">
+                            <span class="label">이름<i>*</i></span>
+                            <input name="name" type="text" placeholder="이름을 입력해주세요">
+                        </div>
+                        <div class="form_data">
+                            <span class="label">전화번호<i>*</i></span>
+                            <div class="tel flex__c">
+                                <select name="" id="">
+                                    <option value="">선택</option>
+                                    <option value="010">010</option>
+                                    <option value="011">011</option>
+                                    <option value="016">016</option>
+                                    <option value="017">017</option>
+                                    <option value="018">018</option>
+                                    <option value="019">019</option>
+                                </select>
+                                <span>-</span>
+                                <input type="tel" name="" id="">
+                                <span>-</span>
+                                <input type="tel" name="" id="">
+                            </div>
+                            <button class="line_btn">인증번호 전송하기</button>
+                            <div class="btn_row">
+                                <input type="tel" placeholder="인증번호를 입력해주세요">
+                                <button type="submit">인증확인</button>
+                            </div>
+                        </div>
+                        <div class="submit_btn">
+                            <button type="submit">확인</button>
+                        </div>
+                    </div>
+        
+                    <!-- 이메일로 -->
+                    <div class="find_tab_box">
+                        <div class="form_data">
+                            <span class="label">아이디<i>*</i></span>
+                            <input name="name" type="text" placeholder="아이디를 입력해주세요">
+                        </div>
+                        <div class="form_data">
+                            <span class="label">이름<i>*</i></span>
+                            <input name="name" type="text" placeholder="이름을 입력해주세요">
+                        </div>
+                        <div class="form_data">
+                            <span class="label">이메일<i>*</i></span>
+                            <div class="email flex__c">
+                                <input type=" text" name="" id="">
+                                <span>@</span>
+                                <select name="" id="">
+                                    <option value="">선택</option>
+                                    <option value="naver.com">naver.com</option>
+                                    <option value="nate.com">nate.com</option>
+                                    <option value="gmail.com">gmail.com</option>
+                                    <option value="yahoo.com">yahoo.com</option>
+                                    <option value="hanmail.net">hanmail.net</option>
+                                </select>
+                            </div>
+                            <button class="line_btn">인증번호 전송하기</button>
+                            <div class="btn_row">
+                                <input type="tel" placeholder="인증번호를 입력해주세요">
+                                <button type="submit">인증확인</button>
+                            </div>
+                            <p class="gray">
+                                crazy830727@naver.com로 인증메일이 발송되었습니다. <br>
+                                인증번호를 입력해 주세요.
+                            </p>
+                        </div>
+                        <div class="submit_btn">
+                            <button type="submit">확인</button>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+          
+
+           
+           
+
+
+
+
+
+        </div>
 
 
 
@@ -181,5 +284,15 @@
         </div>
     </footer>
 
+    <script>
+        $(function(){
+             // 아이디 비밀번호찾기 탭
+            $('.find_wrap .find_tab button').on('click', function() {
+                var idx = $(this).index();
+                $(this).addClass('on').siblings().removeClass('on');
+                $('.find_tab_box').eq(idx).addClass('on').siblings().removeClass('on');
+            })
+        })
+    </script>
 </body>
 </html>
